@@ -1,0 +1,32 @@
+Users
+"Attributes
+- user_ID: string: Primary Key
+- user_email: string
+- user_password: string
+- user_role: string"
+"Admins, SuperUsers and Users operations
++ login(): bool
++ book(): bool
+
+Admins and SuperUsers operations on Sessions
++ add_session(): session_ID
++ remove_session(session_ID): bool
++ modify_session(session_ID, session_entries, session_date, session_schedule): bool
+
+Admins and SuperUsers operations on Movies
++ add_movie(): movie_ID
++ remove_movie(movie_ID): bool
++ modify_movie(movie_ID, movie_title, movie_duration, movie_type, movie_synopsis): bool
+
+Admins operations on Theaters
++ add_theater(): theater_ID
++ remove_theater(theater_ID): bool
++ modify_theater(theater_ID, theater_name, theater_address, theater_phone): bool
+
+Admins operations on Rooms
++ add_room(): room_ID
++ remove_room(room_ID): bool
++ modify_room(room_ID, room_name, room_seat_total, room_seat_available): bool
+
+Admin operations on Users
++ modify_role(user_ID, user_role): bool"
